@@ -3,6 +3,30 @@
 
 # In[1]:
 
+import os
+
+# List of required packages
+packages = [
+    "transformers",
+    "python-dotenv",
+    "torch",
+    "ipywidgets",
+    "accelerate",
+    "bitsandbytes",
+    "langchain",
+    "streamlit",
+    "pypdf2",
+    "pypdf",
+    "sentence-transformers",
+    "faiss-cpu",
+    "openai",
+    "langchain-chroma"
+]
+
+# Install each package if not already installed
+for package in packages:
+    os.system(f"pip install {package}")
+
 
 import os
 import re
